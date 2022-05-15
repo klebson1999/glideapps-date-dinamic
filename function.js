@@ -9,10 +9,9 @@ window.function = function (dia) {
     let dateMonth = dateToday.getMonth()
     let dateYear = dateToday.getFullYear()
 
-    let concatDate = dateYear + '-' + dateMonth + '-' + dateDay
+    let concatDate = dateDay + '-' + dateMonth + '-' + dateYear
     let parseDate = new Date(concatDate)
 
     return (parseDate)
-
 
 }
