@@ -5,7 +5,7 @@ window.function = function (dia) {
     let valueDay = dia.value ?? ""
 
     let dateToday = new Date()
-    let dateDay = String(valueDay)
+    let dateDay = String(dia)
     let dateMonth = dateToday.getMonth()
     let dateYear = dateToday.getFullYear()
 
