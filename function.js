@@ -1,6 +1,6 @@
 // A função aqui pega os parâmetros que você declarou no arquivo `glide.json`, na mesma ordem.
 
-function bN (dia) {
+window.function = function (dia) {
 
     let dateToday = new Date()
     let dateDay = String(dia)
