@@ -5,14 +5,10 @@
     "description": "Dia final de entrega do relatório.",
     "author": "Clebson Rosendo <klebson1999@gmail.com>",
     "params": [
-      {
-        "name": "dia",
-        "displayName": "Dia do mês",
-        "type": "number"
-      }
+
     ],
     "result": {
-      "type": "string"
+      "type": "array"
     }
   }
 ]
