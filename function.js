@@ -1,5 +1,5 @@
 
-window.function = function dateSett() {
+window.function = function(dia) {
     const dateToday = new Date()
     // Subtraindo e retirando o 'ano' e o 'mês' do resultado
     let todayMounthNumber = dateToday.getMonth()
