@@ -1,7 +1,5 @@
-// Data atual 
-const dateToday = moment(Date.now())
-
 window.function = function (dia) {
+    const dateToday = moment(Date.now())
     // Subtraindo e retirando o 'ano' e o 'mês' do resultado
     let dateBack = moment(dateToday).subtract(20, 'days')
     let dateYear = dateBack.format('YYYY')
