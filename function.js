@@ -62,7 +62,7 @@ window.function = function(dia) {
     // Verificando se a data atual é válida
     let resultIfDate = dateToday >= parseDateInit && dateToday <= parseDateEnd ? 'FALSE' : 'TRUE'
 
-    let dateReturn = todayMounthNumber + '#' + dateYearToday + '#' + parseDateEnd + '#' + resultIfDate
+    let dateReturn = todayMounthNumber + '#' + dateYearToday + '#' + concatDateEnd + '#' + resultIfDate
 
     return dateReturn
 }
