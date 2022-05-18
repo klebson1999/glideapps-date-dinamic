@@ -3,9 +3,8 @@ window.function = function(dia) {
     const dateToday = new Date()
     // Subtraindo e retirando o 'ano' e o 'mês' do resultado
     let todayMounthNumber = dateToday.getMonth()
-    //let dateYear = dateBack.format('YYYY')
-    //let numberMounth = dateBack.format('MM')
-    // Nome do mês
+
+    // Retornando o nome do mês
     switch (todayMounthNumber) {
         case 0:
             todayMounthNumber = "Janeiro";
@@ -55,14 +54,25 @@ window.function = function(dia) {
         numberMounthToday = 01
         dateYearToday = dateToday.getFullYear() +1
     } 
+    // Concatenando data para o mês e ano correto
     let concatDateInit = dateYearToday + '-' + numberMounthToday + '-' + dateDayInit
     let concatDateEnd = dateYearToday + '-' + numberMounthToday + '-' + dateDayEnd
+    // Transformando novamente as strings em data legível para realizar operações
     let parseDateInit = new Date(concatDateInit)
     let parseDateEnd = new Date(concatDateEnd)
+    // Formatando data para PT
+    let dateFormat = parseDateEnd.toLocaleDateString(
+        'pt-BR',
+        {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+        }
+    )
     // Verificando se a data atual é válida
     let resultIfDate = dateToday >= parseDateInit && dateToday <= parseDateEnd ? 'FALSE' : 'TRUE'
-
-    let dateReturn = todayMounthNumber + '#' + dateYearToday + '#' + concatDateEnd + '#' + resultIfDate
+    // Retornando numa única string todas as variáveis 
+    let dateReturn = todayMounthNumber + '#' + dateYearToday + '#' + dateFormat + '#' + resultIfDate
 
     return dateReturn
 }
