@@ -49,7 +49,7 @@ window.function = function(dia) {
     let dateDayInit = 1
     let dateDayEnd = 15
     let dateYearToday = dateToday.getFullYear()
-    let numberMounthToday = dateToday.getMonth() +2
+    let numberMounthToday = dateToday.getMonth() +1
     if (numberMounthToday === 13) {
         numberMounthToday = 01
         dateYearToday = dateToday.getFullYear() +1
